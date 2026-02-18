@@ -1,6 +1,6 @@
-{% set version = "1.7.1" %}
+{% set version = "1.2.0" %}
 {% set name = "UPDhmm" %}
-{% set bioc = "3.22" %}
+{% set bioc = "3.20" %}
 
 about:
   description: Uniparental disomy (UPD) is a genetic condition where an individual inherits both copies of a chromosome or part of it from one parent, rather than one copy from each parent. This package contains a HMM for detecting UPDs through HTS (High Throughput Sequencing) data from trio assays. By analyzing the genotypes in the trio, the model infers a hidden state (normal, father isodisomy, mother isodisomy, father heterodisomy and mother heterodisomy).
@@ -24,22 +24,22 @@ package:
 # Suggests: knitr, testthat (>= 2.1.0), BiocStyle, rmarkdown, markdown, karyoploteR, regioneR, dplyr
 requirements:
   host:
-    - bioconductor-genomicranges >=1.63.1,<1.64.0
-    - bioconductor-iranges >=2.45.0,<2.46.0
-    - bioconductor-s4vectors >=0.49.0,<0.50.0
-    - bioconductor-variantannotation >=1.57.1,<1.58.0
+    - bioconductor-genomicranges >=1.58.0,<1.59.0
+    - bioconductor-iranges >=2.40.0,<2.41.0
+    - bioconductor-s4vectors >=0.44.0,<0.45.0
+    - bioconductor-variantannotation >=1.52.0,<1.53.0
     - r-base
     - r-hmm
   run:
-    - bioconductor-genomicranges >=1.63.1,<1.64.0
-    - bioconductor-iranges >=2.45.0,<2.46.0
-    - bioconductor-s4vectors >=0.49.0,<0.50.0
-    - bioconductor-variantannotation >=1.57.1,<1.58.0
+    - bioconductor-genomicranges >=1.58.0,<1.59.0
+    - bioconductor-iranges >=2.40.0,<2.41.0
+    - bioconductor-s4vectors >=0.44.0,<0.45.0
+    - bioconductor-variantannotation >=1.52.0,<1.53.0
     - r-base
     - r-hmm
 
 source:
-  md5: 627aa4c36983cae1330191f2b7f9ec43
+  md5: 0c02f01bfb84fea6abe640011d94321e
   url:
     - https://bioconductor.org/packages/{{ bioc }}/bioc/src/contrib/{{ name }}_{{ version }}.tar.gz
     - https://bioconductor.org/packages/{{ bioc }}/bioc/src/contrib/Archive/{{ name }}/{{ name }}_{{ version }}.tar.gz
